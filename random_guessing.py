@@ -1,9 +1,6 @@
 import random
 
 
-def guessing_condition(guesses):
-  pass
-    
 def exit_game():
   
   play_again = input("Play again? y/n: ").lower()

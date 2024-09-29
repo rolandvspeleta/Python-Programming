@@ -4,12 +4,13 @@ from hangman import *
 from random_guessing import *
 from rps import rps_game
 from slot import slot_machine
+from yt_downloader import *
 
 
 def main():
 
   continue_playing = True
-  programs = ("a. RPS", "b. Number Guessing", "c. Slot Machine", "d. Hangman", "z. Exit Python")
+  programs = ("a. RPS", "b. Number Guessing", "c. Slot Machine", "d. Hangman", "e. Youtube Downloader", "z. Exit Python")
   
   while continue_playing:
     print()
@@ -33,6 +34,9 @@ def main():
       
     elif game == "d":
       hangman()
+    
+    elif game == "e":
+      ytDownloader()
       
     elif game == "z":
       print("EXITING PYTHON.........")
